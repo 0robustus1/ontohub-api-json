@@ -1,0 +1,41 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/ontology_version.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ontology Version",
+  "description": "An ontology version of an ontology",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for an ontology version",
+      "type": "string"
+    },
+    "number": {
+      "description": "The version number of the version of the ontology",
+      "type": "integer"
+    },
+    "evaluation_state": {
+      "description": "The evaluation state of this ontology version",
+      "type": "string"
+    },
+    "commit_oid": {
+      "description": "The commit oid of the commit that triggered this ontology version",
+      "type": "string"
+    },
+    "basepath": {
+      "description": "The path to the ontology relative to the git repositories root directory",
+      "type": "string"
+    },
+    "file_extension": {
+      "description": "Actual file extension of the ontology file in the repository",
+      "type": "string"
+    },
+    "previous_ontology_version": { "$ref": "references.json#/definitions/ontology_version" },
+    "ontology": { "$ref": "references.json#/definitions/ontology" }
+  },
+  "required": [
+    "iri", "number",
+    "commit_oid", "evaluation_state",
+    "basepath", "file_extension",
+    "ontology"
+  ]
+}

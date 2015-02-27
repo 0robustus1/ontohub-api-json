@@ -1,0 +1,104 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/references.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "repository": {
+      "description": "Reference to a repository",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the repository",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the repository",
+          "type": "string"
+        }
+      }
+    },
+    "logic": {
+      "description": "Reference to a logic",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the logic",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the logic",
+          "type": "string"
+        }
+      }
+    },
+    "ontology": {
+      "description": "Reference to an ontology",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the ontology",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the ontology",
+          "type": "string"
+        }
+      }
+    },
+    "license_model": {
+      "description": "Reference to a license model",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the license model",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the license model",
+          "type": "string"
+        }
+      }
+    },
+    "formality_level": {
+      "description": "Reference to a formality level",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the formality level",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the formality level",
+          "type": "string"
+        }
+      }
+    },
+    "ontology": {
+      "description": "Reference to an ontology",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the ontology",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the ontology",
+          "type": "string"
+        }
+      }
+    },
+    "ontology_version": {
+      "description": "Reference to an ontology-version",
+      "type": "object",
+      "properties": {
+        "number": {
+          "description": "The version number of the version of the ontology",
+          "type": "integer"
+        },
+        "iri": {
+          "description": "The unique identifier of the ontology-version",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

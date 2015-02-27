@@ -1,0 +1,80 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/ontology.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ontology",
+  "description": "An ontology as recorded by Ontohub",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for an ontology",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the ontology",
+      "type": "string"
+    },
+    "acronym": {
+      "description": "Acronym of the name of the ontology",
+      "type": "string"
+    },
+    "description": {
+      "description": "A short description of the ontology",
+      "type": "string"
+    },
+    "documentation": {
+      "description": "Includes a reference (usually a URI) to a documentation resource",
+      "type": "string"
+    },
+    "evaluation_state": {
+      "description": "The current state of the evaluation of the ontology",
+      "type": "string"
+    },
+    "basepath": {
+      "description": "The path to the ontology relative to the git repositories root directory",
+      "type": "string"
+    },
+    "file_extension": {
+      "description": "Actual file extension of the ontology file in the repository",
+      "type": "string"
+    },
+    "logic": { "$ref": "references.json#/definitions/logic" },
+    "repository": { "$ref": "references.json#/definitions/repository" },
+    "parent": { "$ref": "references.json#/definitions/ontology" },
+    "current_ontology_version": { "$ref": "references.json#/definitions/ontology_version" },
+    "license_model": { "$ref": "references.json#/definitions/license_model" },
+    "formality_level": { "$ref": "references.json#/definitions/formality_level" },
+    "ontology_versions": {
+      "description": "Reference to all ontology versions of this ontology",
+      "type": "string"
+    },
+    "symbols": {
+      "description": "Reference to all symbols of this ontology",
+      "type": "string"
+    },
+    "sentences": {
+      "description": "Reference to all sentences of this ontology",
+      "type": "string"
+    },
+    "theorems": {
+      "description": "Reference to all theorems of this ontology",
+      "type": "string"
+    },
+    "mappings": {
+      "description": "Reference to all mappings defined by this ontology",
+      "type": "string"
+    }
+  },
+  "required": [
+    "iri",
+    "logic",
+    "repository",
+    "ontology_versions",
+    "symbols",
+    "sentences",
+    "theorems",
+    "mappings",
+    "name",
+    "basepath",
+    "file_extension"
+  ]
+}
