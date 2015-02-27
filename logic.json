@@ -1,0 +1,29 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/logic.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Logic",
+  "description": "A logic as registered with Ontohub",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the logic",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the logic",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description of the logic",
+      "type": "string"
+    },
+    "standardization_status": {
+      "description": "The standardization status of the logic",
+      "type": "string"
+    },
+    "defined_by": {
+      "description": "The resource which defined the logic",
+      "type": "string"
+    }
+  }
+}
