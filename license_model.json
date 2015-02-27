@@ -1,0 +1,25 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/license_model.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "License Model",
+  "description": "A license model",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for a license model",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the license model",
+      "type": "string"
+    },
+    "description": {
+      "description": "A description of the license model",
+      "type": "string"
+    },
+    "url": {
+      "description": "A URL which should contain documentation of the license model. Is not part of Ontohub",
+      "type": "string"
+    }
+  }
+}
