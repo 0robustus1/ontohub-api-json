@@ -1,0 +1,47 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/repository.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Repository",
+  "description": "A repository inside of Ontohub",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for a repository",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the repository",
+      "type": "string"
+    },
+    "path": {
+      "description": "The name of the directory that represents the repository",
+      "type": "string"
+    },
+    "description": {
+      "description": "A description of the repository",
+      "type": "string"
+    },
+    "mirror": {
+      "description": "True if the repository is a mirror",
+      "type": "boolean"
+    },
+    "source": {
+      "description": "Source of the repository, only present if mirror is true",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "The type of the source. Currently either git or svn",
+          "type": "string"
+        },
+        "state": {
+          "description": "State of the mirroring",
+          "type": "string"
+        },
+        "address": {
+          "description": "URI/URL/IRI of the source",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
