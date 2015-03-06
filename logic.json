@@ -23,7 +23,7 @@
     },
     "defined_by": {
       "description": "The resource which defined the logic",
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }

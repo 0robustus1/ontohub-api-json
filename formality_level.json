@@ -15,7 +15,7 @@
     },
     "description": {
       "description": "A description of the formality level",
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }

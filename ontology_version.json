@@ -29,7 +29,6 @@
       "description": "Actual file extension of the ontology file in the repository",
       "type": "string"
     },
-    "previous_ontology_version": { "$ref": "references.json#/definitions/ontology_version" },
     "ontology": { "$ref": "references.json#/definitions/ontology" }
   },
   "required": [
