@@ -1,0 +1,47 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/mapping.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Sentence",
+  "description": "A mapping defined by an ontology",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the mapping",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the mapping",
+      "type": "string"
+    },
+    "kind": {
+      "description": "The kind of mapping",
+      "type": "string"
+    },
+    "theorem": {
+      "description": "Denotes whether this mapping created a theorem",
+      "type": "boolean"
+    },
+    "proven": {
+      "description": "Denotes whether this mapping is proven",
+      "type": "boolean"
+    },
+    "local": {
+      "description": "Denotes whether this mapping is local",
+      "type": "boolean"
+    },
+    "ontology": { "$ref": "references.json#/definitions/ontology" },
+    "source_ontology": { "$ref": "references.json#/definitions/ontology" },
+    "target_ontology": { "$ref": "references.json#/definitions/ontology" }
+  },
+  "required": [
+    "iri",
+    "name",
+    "kind",
+    "theorem",
+    "proven",
+    "local",
+    "ontology",
+    "source_ontology",
+    "target_ontology"
+  ]
+}
