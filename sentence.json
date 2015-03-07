@@ -1,0 +1,36 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/sentence.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Sentence",
+  "description": "A sentence inside of an ontology",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the sentence",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the sentence — usually auto-generated.",
+      "type": "string"
+    },
+    "text": {
+      "description": "The definition of the sentence",
+      "type": "string"
+    },
+    "imported": {
+      "description": "Denotes whether this sentence was imported from another ontology",
+      "type": "boolean"
+    },
+    "ontology": { "$ref": "references.json#/definitions/ontology" },
+    "symbols": {
+      "description": "Reference to all symbols used in this sentence",
+      "type": "string"
+    }
+  },
+  "required": [
+    "iri",
+    "name",
+    "ontology",
+    "symbols"
+  ]
+}
