@@ -45,6 +45,12 @@
         { "type": "null" }
       ]
     },
+    "ontology_type": {
+      "oneOf": [
+        { "$ref": "references.json#/definitions/ontology_type" },
+        { "type": "null" }
+      ]
+    },
     "current_ontology_version": { "$ref": "references.json#/definitions/ontology_version" },
     "license_models": {
       "type": "array",

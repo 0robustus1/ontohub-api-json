@@ -86,6 +86,20 @@
         }
       }
     },
+    "ontology_type": {
+      "description": "Reference to an ontology type",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the ontology type",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the ontology type",
+          "type": "string"
+        }
+      }
+    },
     "ontology_version": {
       "description": "Reference to an ontology-version",
       "type": "object",
