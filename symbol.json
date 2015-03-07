@@ -1,0 +1,46 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/symbol.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Symbol",
+  "description": "A symbol defined by an ontology",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the symbol",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the symbol",
+      "type": "string"
+    },
+    "kind": {
+      "description": "The kind of symbol",
+      "type": "string"
+    },
+    "text": {
+      "description": "The definition of the symbol",
+      "type": "string"
+    },
+    "label": {
+      "description": "The label that is attached to the symbol",
+      "type": ["string", "null"]
+    },
+    "comment": {
+      "description": "A comment on the symbol",
+      "type": ["string", "null"]
+    },
+    "ontology": { "$ref": "references.json#/definitions/ontology" },
+    "sentences": {
+      "description": "Reference to all sentences that use the symbol in this ontology",
+      "type": "string"
+    }
+  },
+  "required": [
+    "iri",
+    "name",
+    "kind",
+    "text",
+    "ontology",
+    "sentences"
+  ]
+}
