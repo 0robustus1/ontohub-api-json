@@ -113,6 +113,48 @@
           "type": "string"
         }
       }
+    },
+    "mapping": {
+      "description": "Reference to a mapping",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the mapping",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the mapping",
+          "type": "string"
+        }
+      }
+    },
+    "sentence": {
+      "description": "Reference to a sentence",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the sentence",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the sentence",
+          "type": "string"
+        }
+      }
+    },
+    "symbol": {
+      "description": "Reference to a symbol",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the symbol",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the symbol",
+          "type": "string"
+        }
+      }
     }
   }
 }
