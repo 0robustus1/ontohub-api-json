@@ -1,0 +1,8 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/ontology/commands/mappings.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "///mappings",
+  "description": "A list of mapping references for that ontology",
+  "type": "array",
+  "items": { "$ref": "../../references.json#/definitions/mapping" }
+}

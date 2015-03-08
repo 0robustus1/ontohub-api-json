@@ -1,0 +1,8 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/ontology/commands/ontology_versions.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "///ontology_versions",
+  "description": "A list of ontology version references for that ontology",
+  "type": "array",
+  "items": { "$ref": "../../references.json#/definitions/ontology_version" }
+}
