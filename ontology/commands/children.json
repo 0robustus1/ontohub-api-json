@@ -1,0 +1,8 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/ontology/commands/children.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "///children",
+  "description": "A list of child-ontology references for that ontology",
+  "type": "array",
+  "items": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/references.json#/definitions/ontology" }
+}
