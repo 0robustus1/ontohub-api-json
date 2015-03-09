@@ -4,5 +4,5 @@
   "title": "///symbols",
   "description": "A list of symbol references for that ontology",
   "type": "array",
-  "items": { "$ref": "../../references.json#/definitions/symbol" }
+  "items": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/references.json#/definitions/symbol" }
 }

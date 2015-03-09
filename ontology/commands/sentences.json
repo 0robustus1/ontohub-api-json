@@ -4,5 +4,5 @@
   "title": "///sentences",
   "description": "A list of sentence references for that ontology",
   "type": "array",
-  "items": { "$ref": "../../references.json#/definitions/sentence" }
+  "items": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/references.json#/definitions/sentence" }
 }

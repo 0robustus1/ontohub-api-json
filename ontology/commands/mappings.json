@@ -4,5 +4,5 @@
   "title": "///mappings",
   "description": "A list of mapping references for that ontology",
   "type": "array",
-  "items": { "$ref": "../../references.json#/definitions/mapping" }
+  "items": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/references.json#/definitions/mapping" }
 }
