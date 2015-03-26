@@ -7,7 +7,8 @@
   "properties": {
     "iri": {
       "description": "The unique identifier for a license model",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "name": {
       "description": "The name of the license model",
@@ -19,7 +20,8 @@
     },
     "url": {
       "description": "A URL which should contain documentation of the license model. Is not part of Ontohub",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     }
   }
 }

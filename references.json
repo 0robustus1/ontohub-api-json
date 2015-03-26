@@ -12,7 +12,8 @@
         },
         "iri": {
           "description": "The unique identifier of the repository",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -26,7 +27,8 @@
         },
         "iri": {
           "description": "The unique identifier of the logic",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -40,7 +42,8 @@
         },
         "iri": {
           "description": "The unique identifier of the ontology",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -54,7 +57,8 @@
         },
         "iri": {
           "description": "The unique identifier of the license model",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -68,7 +72,8 @@
         },
         "iri": {
           "description": "The unique identifier of the formality level",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -82,7 +87,8 @@
         },
         "iri": {
           "description": "The unique identifier of the ontology",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -96,7 +102,8 @@
         },
         "iri": {
           "description": "The unique identifier of the ontology type",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -110,7 +117,8 @@
         },
         "iri": {
           "description": "The unique identifier of the ontology-version",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -124,7 +132,8 @@
         },
         "iri": {
           "description": "The unique identifier of the mapping",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -138,7 +147,8 @@
         },
         "iri": {
           "description": "The unique identifier of the sentence",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -152,7 +162,8 @@
         },
         "iri": {
           "description": "The unique identifier of the symbol",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       }
     }

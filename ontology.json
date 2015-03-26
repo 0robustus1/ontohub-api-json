@@ -7,7 +7,8 @@
   "properties": {
     "iri": {
       "description": "The unique identifier for an ontology",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "name": {
       "description": "The name of the ontology",
@@ -64,19 +65,23 @@
     },
     "ontology_versions": {
       "description": "Reference to all ontology versions of this ontology",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "symbols": {
       "description": "Reference to all symbols of this ontology",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "sentences": {
       "description": "Reference to all sentences of this ontology",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "mappings": {
       "description": "Reference to all mappings defined by this ontology",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     }
   },
   "required": [
