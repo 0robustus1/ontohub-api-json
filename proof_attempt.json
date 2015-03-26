@@ -10,7 +10,7 @@
       "type": "string",
       "format": "uri"
     },
-    "attempt_number": {
+    "number": {
       "description": "The number of this proof attempt in relation to the theorem",
       "type": "integer"
     },

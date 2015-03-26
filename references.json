@@ -186,7 +186,7 @@
       "description": "Reference to a proof attempt",
       "type": "object",
       "properties": {
-        "attempt_number": {
+        "number": {
           "description": "The number of the proof attempt relative to its theorem",
           "type": "integer"
         },
