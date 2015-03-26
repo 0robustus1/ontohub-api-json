@@ -22,10 +22,7 @@
       "description": "The tactic script of this attempt",
       "type": "string"
     },
-    "prover_output": {
-      "description": "The raw prover output of this proof attempt",
-      "type": "string"
-    },
+    "prover_output": { "$ref": "references.json#/definitions/prover_output" },
     "time_taken": {
       "description": "The time it took to perform this proof attempt (in seconds)",
       "type": ["integer", "null"]

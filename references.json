@@ -197,6 +197,17 @@
         }
       }
     },
+    "prover_output": {
+      "description": "Reference to a prover output",
+      "type": "object",
+      "properties": {
+        "iri": {
+          "description": "The unique identifier of the prover output",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
     "proof_attempt_configuration": {
       "description": "Reference to a proof attempt configuration",
       "type": "object",
