@@ -1,0 +1,27 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Theorem",
+  "description": "A theorem inside of an ontology",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the proof status",
+      "type": "string",
+      "format": "uri"
+    },
+    "identifier": {
+      "description": "The SZS identifier of the proof status",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the proof status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "iri",
+    "identifier",
+    "name"
+  ]
+}

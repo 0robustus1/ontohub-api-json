@@ -22,7 +22,7 @@
       "description": "The current proof-state",
       "type": "boolean"
     },
-    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+    "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
     "proof_attempts": {
       "description": "Reference to all proof attempts for this theorem",
       "type": "string",

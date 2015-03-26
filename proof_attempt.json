@@ -32,7 +32,7 @@
       "type": "boolean"
     },
     "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
-    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+    "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
     "used_axioms": {
       "description": "Reference to all axioms used for this attempt",
       "type": "string",
