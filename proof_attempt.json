@@ -1,0 +1,63 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/proof_attempt.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Proof Attempt",
+  "description": "A proof attempt of a theorem",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the proof attempt",
+      "type": "string",
+      "format": "uri"
+    },
+    "attempt_number": {
+      "description": "The number of this proof attempt in relation to the theorem",
+      "type": "integer"
+    },
+    "prover": {
+      "description": "The name of the prover used during this attempt",
+      "type": "string"
+    },
+    "tactic_script": {
+      "description": "The tactic script of this attempt",
+      "type": "string"
+    },
+    "prover_output": {
+      "description": "The raw prover output of this proof attempt",
+      "type": "string"
+    },
+    "time_taken": {
+      "description": "The time it took to perform this proof attempt (in seconds)",
+      "type": ["integer", "null"]
+    },
+    "state": {
+      "description": "The current proof-state",
+      "type": "boolean"
+    },
+    "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
+    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+    "used_axioms": {
+      "description": "Reference to all axioms used for this attempt",
+      "type": "string",
+      "format": "uri"
+    },
+    "used_theorems": {
+      "description": "Reference to all theorems used for this attempt",
+      "type": "string",
+      "format": "uri"
+    },
+    "generated_axioms": {
+      "description": "Reference to all axioms generated during this attempt",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "iri",
+    "attempt_number",
+    "state",
+    "used_axioms",
+    "used_theorems",
+    "generated_axioms"
+  ]
+}

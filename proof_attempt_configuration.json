@@ -1,0 +1,41 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/proof_attempt_configuration.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Proof Attempt Configuration",
+  "description": "A configuration of a proof attempt",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the proof attempt",
+      "type": "string",
+      "format": "uri"
+    },
+    "selected_prover": {
+      "description": "The name of the prover",
+      "type": "string"
+    },
+    "selected_timeout": {
+      "description": "The timeout for the proof attempt (in seconds)",
+      "type": "integer"
+    },
+    "selected_logic_mapping": { "$ref": "references.json#/definitions/logic_mapping" },
+    "selected_axioms": {
+      "description": "Reference to all axioms selected for this attempt",
+      "type": "string",
+      "format": "uri"
+    },
+    "selected_theorems": {
+      "description": "Reference to all theorems selected for this attempt",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "iri",
+    "selected_prover",
+    "selected_timeout",
+    "selected_logic_mapping",
+    "selected_axioms",
+    "selected_theorems"
+  ]
+}

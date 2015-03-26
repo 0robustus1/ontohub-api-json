@@ -1,0 +1,39 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/theorem.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Theorem",
+  "description": "A theorem inside of an ontology",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the theorem",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "The name of the theorem — usually auto-generated.",
+      "type": "string"
+    },
+    "definition": {
+      "description": "The definition of the theorem",
+      "type": "string"
+    },
+    "state": {
+      "description": "The current proof-state",
+      "type": "boolean"
+    },
+    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+    "proof_attempts": {
+      "description": "Reference to all proof attempts for this theorem",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "iri",
+    "name",
+    "definition",
+    "state",
+    "proof_attempts"
+  ]
+}

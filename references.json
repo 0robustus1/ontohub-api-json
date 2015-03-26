@@ -166,6 +166,47 @@
           "format": "uri"
         }
       }
+    },
+    "theorem": {
+      "description": "Reference to a theorem",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the theorem",
+          "type": "string"
+        },
+        "iri": {
+          "description": "The unique identifier of the theorem",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "proof_attempt": {
+      "description": "Reference to a proof attempt",
+      "type": "object",
+      "properties": {
+        "attempt_number": {
+          "description": "The number of the proof attempt relative to its theorem",
+          "type": "integer"
+        },
+        "iri": {
+          "description": "The unique identifier of the proof attempt",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "proof_attempt_configuration": {
+      "description": "Reference to a proof attempt configuration",
+      "type": "object",
+      "properties": {
+        "iri": {
+          "description": "The unique identifier of the proof attempt configuration",
+          "type": "string",
+          "format": "uri"
+        }
+      }
     }
   }
 }
