@@ -18,9 +18,10 @@
       "description": "The definition of the theorem",
       "type": "string"
     },
-    "state": {
-      "description": "The current proof-state",
-      "type": "boolean"
+    "evaluation_state": {
+      "description": "The current state of the proof evaluation",
+      "type": "string",
+      "enum": [ "done", "failed", "pending", "processing" ]
     },
     "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
     "ontology": {
@@ -41,7 +42,7 @@
     "iri",
     "name",
     "definition",
-    "state",
+    "evaluation_state",
     "symbols",
     "proof_attempts"
   ]

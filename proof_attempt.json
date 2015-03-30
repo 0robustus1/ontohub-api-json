@@ -27,9 +27,10 @@
       "description": "The time it took to perform this proof attempt (in seconds)",
       "type": ["integer", "null"]
     },
-    "state": {
-      "description": "The current proof-state",
-      "type": "string"
+    "evaluation_state": {
+      "description": "The current state of the proof evaluation",
+      "type": "string",
+      "enum": [ "done", "failed", "pending", "processing" ]
     },
     "theorem": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/theorem.json#" },
     "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
@@ -53,7 +54,7 @@
   "required": [
     "iri",
     "number",
-    "state",
+    "evaluation_state",
     "used_axioms",
     "used_theorems",
     "generated_axioms"
