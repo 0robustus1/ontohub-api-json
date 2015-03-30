@@ -23,6 +23,14 @@
       "type": "boolean"
     },
     "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
+    "ontology": {
+      "$ref": "references.json#/definitions/ontology"
+    },
+    "symbols": {
+      "description": "Reference to all symbols used in this theorem",
+      "type": "string",
+      "format": "uri"
+    },
     "proof_attempts": {
       "description": "Reference to all proof attempts for this theorem",
       "type": "string",
@@ -34,6 +42,7 @@
     "name",
     "definition",
     "state",
+    "symbols",
     "proof_attempts"
   ]
 }
