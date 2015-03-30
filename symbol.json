@@ -18,7 +18,7 @@
       "description": "The kind of symbol",
       "type": "string"
     },
-    "text": {
+    "definition": {
       "description": "The definition of the symbol",
       "type": "string"
     },
