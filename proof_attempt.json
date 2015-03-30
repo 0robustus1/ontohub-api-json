@@ -32,7 +32,7 @@
       "type": "string",
       "enum": [ "done", "failed", "pending", "processing" ]
     },
-    "theorem": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/theorem.json#" },
+    "theorem": { "$ref": "references.json#/definitions/theorem" },
     "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
     "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
     "used_axioms": {
