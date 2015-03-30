@@ -14,7 +14,7 @@
       "description": "The name of the sentence — usually auto-generated.",
       "type": "string"
     },
-    "text": {
+    "definition": {
       "description": "The definition of the sentence",
       "type": "string"
     },
@@ -32,6 +32,8 @@
   "required": [
     "iri",
     "name",
+    "definition",
+    "imported",
     "ontology",
     "symbols"
   ]

@@ -20,7 +20,7 @@
     },
     "content": {
       "description": "The actual prover output",
-      "type": "integer"
+      "type": "string"
     },
     "proof_attempt": { "$ref": "references.json#/definitions/proof_attempt" }
   },

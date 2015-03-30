@@ -29,7 +29,7 @@
     },
     "state": {
       "description": "The current proof-state",
-      "type": "boolean"
+      "type": "string"
     },
     "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
     "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
@@ -51,7 +51,7 @@
   },
   "required": [
     "iri",
-    "attempt_number",
+    "number",
     "state",
     "used_axioms",
     "used_theorems",
