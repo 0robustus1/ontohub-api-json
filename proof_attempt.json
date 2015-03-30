@@ -14,7 +14,7 @@
       "description": "The number of this proof attempt in relation to the theorem",
       "type": "integer"
     },
-    "prover": {
+    "used_prover": {
       "description": "The name of the prover used during this attempt",
       "type": "string"
     },
