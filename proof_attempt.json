@@ -31,6 +31,7 @@
       "description": "The current proof-state",
       "type": "string"
     },
+    "theorem": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/theorem.json#" },
     "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
     "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
     "used_axioms": {
