@@ -122,6 +122,17 @@
         }
       }
     },
+    "logic_mapping": {
+      "description": "Reference to a mapping between logics",
+      "type": "object",
+      "properties": {
+        "iri": {
+          "description": "The unique identifier of the logic mapping",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
     "mapping": {
       "description": "Reference to a mapping",
       "type": "object",

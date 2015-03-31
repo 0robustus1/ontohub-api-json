@@ -1,0 +1,61 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/logic_mapping.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Logic Mapping",
+  "description": "A mapping between two logics",
+  "type": "object",
+  "properties": {
+    "iri": {
+      "description": "The unique identifier for the logic-mapping",
+      "type": "string",
+      "format": "uri"
+    },
+    "kind": {
+      "description": "The kind of mapping",
+      "type": "string"
+    },
+    "standardization_status": {
+      "description": "The standardization status of the mapping",
+      "type": "string"
+    },
+    "defined_by": {
+      "description": "The authority that defined the mapping",
+      "type": "string"
+    },
+    "faithfulness": {
+      "description": "Degree of faithfulness of the mapping",
+      "type": "string"
+    },
+    "theoroidalness": {
+      "description": "Degree of theoroidalness of the mapping",
+      "type": "string"
+    },
+    "exactness": {
+      "description": "Degree of exactness of the mapping",
+      "type": "string"
+    },
+    "projection": {
+      "description": "Describes whether the mapping is a projection",
+      "type": "boolean"
+    },
+    "default": {
+      "description": "Describes whether this mapping is considered to be the default one between these two logics",
+      "type": "boolean"
+    },
+    "source_ontology": { "$ref": "references.json#/definitions/ontology" },
+    "target_ontology": { "$ref": "references.json#/definitions/ontology" }
+  },
+  "required": [
+    "iri",
+    "kind",
+    "standardization_status",
+    "defined_by",
+    "faithfulness",
+    "theoroidalness",
+    "exactness",
+    "projection",
+    "default",
+    "source_ontology",
+    "target_ontology"
+  ]
+}
