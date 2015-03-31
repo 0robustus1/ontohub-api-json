@@ -1,7 +1,7 @@
 {
   "id": "https://masterthesis.rightsrestricted.com/ontohub/mapping.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Sentence",
+  "title": "Mapping",
   "description": "A mapping defined by an ontology",
   "type": "object",
   "properties": {
