@@ -22,7 +22,12 @@
       "description": "The tactic script of this attempt",
       "type": "string"
     },
-    "prover_output": { "$ref": "references.json#/definitions/prover_output" },
+    "prover_output": {
+      "oneOf": [
+        { "$ref": "references.json#/definitions/prover_output" },
+        { "type": null }
+      ]
+    },
     "time_taken": {
       "description": "The time it took to perform this proof attempt (in seconds)",
       "type": ["integer", "null"]
@@ -33,8 +38,13 @@
       "enum": [ "done", "failed", "pending", "processing" ]
     },
     "theorem": { "$ref": "references.json#/definitions/theorem" },
-    "proof_attempt_configuration": { "$ref": "references.json#/definitions/proof_attempt_configuration" },
-    "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
+    "proof_attempt_configuration": {
+      "oneOf": [
+        { "$ref": "references.json#/definitions/proof_attempt_configuration" },
+        { "type": "null" }
+      ]
+    },
+    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
     "used_axioms": {
       "description": "Reference to all axioms used for this attempt",
       "type": "string",
@@ -55,6 +65,8 @@
     "iri",
     "number",
     "evaluation_state",
+    "theorem",
+    "proof_status",
     "used_axioms",
     "used_theorems",
     "generated_axioms"

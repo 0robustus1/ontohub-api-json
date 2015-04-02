@@ -2,17 +2,13 @@
   "id": "https://masterthesis.rightsrestricted.com/ontohub/prover_output.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Prover Output",
-  "description": "A configuration of a proof attempt",
+  "description": "The prover output for a specific proof attempt",
   "type": "object",
   "properties": {
     "iri": {
       "description": "The unique identifier for the prover output",
       "type": "string",
       "format": "uri"
-    },
-    "id": {
-      "description": "The identifying number of prover output.",
-      "type": "integer"
     },
     "prover": {
       "description": "The name of the prover",
@@ -26,7 +22,6 @@
   },
   "required": [
     "iri",
-    "id",
     "prover",
     "content",
     "proof_attempt"

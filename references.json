@@ -77,21 +77,6 @@
         }
       }
     },
-    "ontology": {
-      "description": "Reference to an ontology",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "The name of the ontology",
-          "type": "string"
-        },
-        "iri": {
-          "description": "The unique identifier of the ontology",
-          "type": "string",
-          "format": "uri"
-        }
-      }
-    },
     "ontology_type": {
       "description": "Reference to an ontology type",
       "type": "object",
@@ -197,14 +182,33 @@
       "description": "Reference to a proof attempt",
       "type": "object",
       "properties": {
-        "number": {
-          "description": "The number of the proof attempt relative to its theorem",
-          "type": "integer"
-        },
         "iri": {
           "description": "The unique identifier of the proof attempt",
           "type": "string",
           "format": "uri"
+        },
+        "number": {
+          "description": "The number of the proof attempt relative to its theorem",
+          "type": "integer"
+        }
+      }
+    },
+    "proof_status": {
+      "description": "Reference to a proof status",
+      "type": "object",
+      "properties": {
+        "iri": {
+          "description": "The unique identifier of the proof status",
+          "type": "string",
+          "format": "uri"
+        },
+        "identifier": {
+          "description": "The identifier of the proof status",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the proof status (human-readable)",
+          "type": "string"
         }
       }
     },

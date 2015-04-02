@@ -23,10 +23,8 @@
       "type": "string",
       "enum": [ "done", "failed", "pending", "processing" ]
     },
-    "proof_status": { "$ref": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#" },
-    "ontology": {
-      "$ref": "references.json#/definitions/ontology"
-    },
+    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+    "ontology": { "$ref": "references.json#/definitions/ontology" },
     "symbols": {
       "description": "Reference to all symbols used in this theorem",
       "type": "string",
@@ -43,6 +41,8 @@
     "name",
     "definition",
     "evaluation_state",
+    "proof_status",
+    "ontology",
     "symbols",
     "proof_attempts"
   ]

@@ -34,15 +34,18 @@
           "properties": {
             "type": {
               "description": "Currently either mirror or fork",
-              "type": "string"
+              "type": "string",
+              "enum": [ "mirror", "fork" ]
             },
             "source_type": {
               "description": "The type of the source. Currently either git or svn",
-              "type": "string"
+              "type": "string",
+              "enum": [ "git", "svn" ]
             },
             "state": {
               "description": "State of the mirroring",
-              "type": "string"
+              "type": "string",
+              "enum": [ "pending", "fetching", "processing",  "done", "failed" ]
             },
             "address": {
               "description": "URI/URL/IRI of the source",

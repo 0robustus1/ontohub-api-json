@@ -16,13 +16,18 @@
     },
     "selected_prover": {
       "description": "The name of the prover",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "selected_timeout": {
       "description": "The timeout for the proof attempt (in seconds)",
-      "type": "integer"
+      "type": ["integer", "null"]
     },
-    "selected_logic_mapping": { "$ref": "references.json#/definitions/logic_mapping" },
+    "selected_logic_mapping": {
+      "oneOf": [
+        { "$ref": "references.json#/definitions/logic_mapping" },
+        { "type": "null" }
+      ]
+    },
     "selected_axioms": {
       "description": "Reference to all axioms selected for this attempt",
       "type": "string",
@@ -36,9 +41,6 @@
   },
   "required": [
     "iri",
-    "selected_prover",
-    "selected_timeout",
-    "selected_logic_mapping",
     "selected_axioms",
     "selected_theorems"
   ]
