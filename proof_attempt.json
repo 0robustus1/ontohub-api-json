@@ -25,7 +25,7 @@
     "prover_output": {
       "oneOf": [
         { "$ref": "references.json#/definitions/prover_output" },
-        { "type": null }
+        { "type": "null" }
       ]
     },
     "time_taken": {
