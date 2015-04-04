@@ -16,8 +16,7 @@
     },
     "defined_by": {
       "description": "The authority that defined the mapping",
-      "type": "string",
-      "enum": [ "registry" ]
+      "type": ["string", "null"]
     },
     "faithfulness": {
       "description": "Degree of faithfulness of the mapping",
@@ -25,6 +24,10 @@
     },
     "exactness": {
       "description": "Degree of exactness of the mapping",
+      "type": "string"
+    },
+    "theoroidalness": {
+      "description": "Degree of theoroidalness of the mapping",
       "type": "string"
     },
     "projection": {
