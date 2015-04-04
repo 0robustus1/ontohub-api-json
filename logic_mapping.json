@@ -31,8 +31,8 @@
       "description": "Describes whether the mapping is a projection",
       "type": "boolean"
     },
-    "source_ontology": { "$ref": "references.json#/definitions/ontology" },
-    "target_ontology": { "$ref": "references.json#/definitions/ontology" }
+    "source_logic": { "$ref": "references.json#/definitions/logic" },
+    "target_logic": { "$ref": "references.json#/definitions/logic" }
   },
   "required": [
     "iri",
@@ -42,7 +42,7 @@
     "theoroidalness",
     "exactness",
     "projection",
-    "source_ontology",
-    "target_ontology"
+    "source_logic",
+    "target_logic"
   ]
 }
