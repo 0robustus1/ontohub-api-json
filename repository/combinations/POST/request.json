@@ -1,0 +1,32 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/repository/combinations/POST/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: POST ///combinations on a repository",
+  "description": "Describes the request body of a request to create a new combination of ontologies or mappings",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "description": "A list of ontology iris to combine. This can also be models or specifications in supported formats.",
+      "type": "array",
+      "items": {
+        "description": "A resolvable iri of an ontology",
+        "type": "string"
+      }
+    },
+    "combination_name": {
+      "description": "The name the ontology, that represents the combination, will have.",
+      "type": ["string", "null"]
+    },
+    "file_name": {
+      "description": "The filename of the resulting distributed ontology. If it is not set the default filename will be assumed.",
+      "type": ["string", "null"]
+    },
+    "commit_message": {
+      "description": "The commit message of the resulting commit. If not supplied will default to a commit message that will describe the ontologies and mappings.",
+      "type": ["string", "null"]
+    }
+  },
+  "required": [
+    "nodes"
+  ]
+}
