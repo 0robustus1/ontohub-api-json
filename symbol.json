@@ -41,7 +41,7 @@
     "iri",
     "name",
     "kind",
-    "text",
+    "definition",
     "ontology",
     "sentences"
   ]
