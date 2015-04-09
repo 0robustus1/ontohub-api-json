@@ -1,0 +1,22 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/ontohub/tactic_script.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Tactic Script",
+  "description": "The tactic script generated in a proof attempt",
+  "type": "object",
+  "properties": {
+    "time_limit": {
+      "description": "The time limit in seconds",
+      "type": "integer"
+    },
+    "extra_options": {
+      "description": "Additional prover-specific options",
+      "type": "array",
+      "items": {
+        "description": "A prover-specific option",
+        "type": "string"
+      }
+    }
+  },
+  "required": [ "time_limit" ]
+}
