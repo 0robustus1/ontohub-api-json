@@ -1,0 +1,8 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/categories/GET/200.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "///categories",
+  "description": "A list of categories the ontology belongs to",
+  "type": "array",
+  "items": { "$ref": "https://masterthesis.rightsrestricted.com/api/category.json" }
+}
