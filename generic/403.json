@@ -1,0 +1,19 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/generic/403.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "403 (Forbidden)",
+  "description": "This is a generic 403 (Forbidden) response",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "The human-readable description of the 403 status.",
+      "type": "string",
+      "enum": [ "Forbidden" ]
+    },
+    "errors": { "$ref": "definitions.json#/definitions/errors"},
+    "_links": { "$ref": "definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "status", "errors"
+  ]
+}

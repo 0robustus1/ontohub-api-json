@@ -1,0 +1,22 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/generic/202.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "202 (Accepted)",
+  "description": "This is a generic 202 (Accepted) response",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "The human-readable description of the 202 status.",
+      "type": "string",
+      "enum": [ "Accepted" ]
+    },
+    "location": {
+      "description": "Reference to the intermediately created resource. Mirrors the location-Header of the response.",
+      "type": "string"
+    },
+    "_links": { "$ref": "definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "status", "location"
+  ]
+}

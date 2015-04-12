@@ -1,0 +1,17 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_links": {
+
+    },
+    "errors": {
+      "description": "Information on the specific errors that occured",
+      "type": "array",
+      "items": {
+        "description": "Information on one of the specific errors that occured",
+        "type": "string"
+      }
+    }
+  }
+}

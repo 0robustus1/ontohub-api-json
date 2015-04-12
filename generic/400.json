@@ -1,0 +1,19 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/generic/400.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "400 (Bad Request)",
+  "description": "This is a generic 400 (Bad Request) response",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "The human-readable description of the 400 status.",
+      "type": "string",
+      "enum": [ "Bad Request" ]
+    },
+    "errors": { "$ref": "definitions.json#/definitions/errors"},
+    "_links": { "$ref": "definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "status", "errors"
+  ]
+}

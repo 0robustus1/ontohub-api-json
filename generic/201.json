@@ -1,0 +1,22 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/generic/201.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "201 (Created)",
+  "description": "This is a generic 201 (Created) response",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "The human-readable description of the 201 status.",
+      "type": "string",
+      "enum": [ "Created" ]
+    },
+    "location": {
+      "description": "Reference to the created resource. Mirrors the location-Header of the response.",
+      "type": "string"
+    },
+    "_links": { "$ref": "definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "status", "location"
+  ]
+}

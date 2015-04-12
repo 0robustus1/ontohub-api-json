@@ -1,0 +1,17 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/generic/501.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "501 (Not Implemented)",
+  "description": "This is a generic 501 (Not Implemented) response",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "The human-readable description of the 501 status.",
+      "type": "string",
+      "enum": [ "Not Implemented" ]
+    }
+  },
+  "required": [
+    "status"
+  ]
+}
