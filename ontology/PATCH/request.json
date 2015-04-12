@@ -1,0 +1,31 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/PATCH/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: PATCH on an ontology",
+  "description": "Describes the request body of a request to update an ontology",
+  "type": "object",
+  "properties": {
+    "acronym": { "type": "string" },
+    "description": { "type": "string" },
+    "documentation": { "type": "string" },
+    "ontology_type": { "$ref": "../../generic/definitions.json#/definitions/iri" },
+    "formality_level": { "$ref": "../../generic/definitions.json#/definitions/iri" },
+    "license_models": {
+      "type": "array",
+      "items": { "$ref": "../../generic/definitions.json#/definitions/iri" }
+    },
+    "categories": {
+      "type": "array",
+      "items": { "$ref": "../../generic/definitions.json#/definitions/iri" }
+    },
+    "projects": {
+      "type": "array",
+      "items": { "$ref": "../../generic/definitions.json#/definitions/iri" }
+    },
+    "tasks": {
+      "type": "array",
+      "items": { "$ref": "../../generic/definitions.json#/definitions/iri" }
+    }
+  },
+  "required": []
+}
