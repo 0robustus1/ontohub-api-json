@@ -1,0 +1,26 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/project/PUT/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: PUT on a project",
+  "description": "Describes the request body of a request to update a project",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "contact": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "institution": { "type": ["string", "null"] },
+    "homepage": {
+      "oneOf": [
+        { "$ref": "../../generic/definitions.json#/definitions/iri" },
+        { "type": "null" }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "contact",
+    "description",
+    "homepage",
+    "institution"
+  ]
+}

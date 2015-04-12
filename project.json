@@ -1,0 +1,36 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/project.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Project",
+  "description": "A project",
+  "type": "object",
+  "properties": {
+    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+    "name": {
+      "description": "The name of the project",
+      "type": "string"
+    },
+    "contact": {
+      "description": "Person to contact for this project",
+      "type": ["string", "null"]
+    },
+    "description": {
+      "description": "Description of the project",
+      "type": ["string", "null"]
+    },
+    "homepage": {
+      "oneOf": [
+        { "$ref": "generic/definitions.json#/definitions/iri" },
+        { "type": "null" }
+      ]
+    },
+    "institution": {
+      "description": "The institution that houses this project",
+      "type": ["string", "null"]
+    },
+    "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "iri", "name"
+  ]
+}

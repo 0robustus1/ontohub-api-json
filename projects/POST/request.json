@@ -1,0 +1,22 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/projects/POST/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: POST on projects",
+  "description": "Describes the request body of a request to create a project",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "contact": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "institution": { "type": ["string", "null"] },
+    "homepage": {
+      "oneOf": [
+        { "$ref": "../../generic/definitions.json#/definitions/iri" },
+        { "type": "null" }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
