@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/ontohub/sentence.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/sentence.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Sentence",
   "description": "A sentence inside of an ontology",

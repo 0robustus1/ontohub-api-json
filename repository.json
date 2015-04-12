@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/ontohub/repository.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/repository.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Repository",
   "description": "A repository inside of Ontohub",

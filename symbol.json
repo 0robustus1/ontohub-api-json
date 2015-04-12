@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/ontohub/symbol.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/symbol.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Symbol",
   "description": "A symbol defined by an ontology",

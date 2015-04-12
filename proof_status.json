@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/ontohub/proof_status.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/proof_status.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Proof-Status",
   "description": "proof status of a theorem or a proof attempt",

@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/ontohub/ontology_version.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology_version.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Ontology Version",
   "description": "An ontology version of an ontology",
