@@ -233,6 +233,13 @@
           "format": "uri"
         }
       }
+    },
+    "comment": {
+      "description": "Reference to comment",
+      "type": "object",
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
+      }
     }
   }
 }

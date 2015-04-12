@@ -1,0 +1,8 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/comments/GET/200.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "///comments",
+  "description": "A list of comments for the ontology",
+  "type": "array",
+  "items": { "$ref": "../../../references.json#/definitions/comment" }
+}

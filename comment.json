@@ -1,0 +1,43 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/comment.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Comment",
+  "description": "A comment in the application",
+  "type": "object",
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "author": {
+          "description": "The username of the author of the comment",
+          "type": "string"
+        },
+        "text": {
+          "description": "The comment itself",
+          "type": "string"
+        },
+        "ontology": { "$ref": "references.json#/definitions/ontology" }
+      },
+      "required": [
+        "iri", "name", "ontology"
+      ]
+    },
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "author": {
+          "description": "The username of the author of the comment",
+          "type": "string"
+        },
+        "text": {
+          "description": "The comment itself",
+          "type": "string"
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri", "author", "text", "_links"
+      ]
+    }
+  ]
+}
