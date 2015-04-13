@@ -1,0 +1,8 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/reviews/GET/200.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "///reviews",
+  "description": "A list of reviews for the ontology",
+  "type": "array",
+  "items": { "$ref": "../../../references.json#/definitions/reviews" }
+}

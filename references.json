@@ -240,6 +240,13 @@
       "properties": {
         "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
+    },
+    "review": {
+      "description": "Reference to a review",
+      "type": "object",
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
+      }
     }
   }
 }
