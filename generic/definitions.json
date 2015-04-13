@@ -9,8 +9,51 @@
       "pattern": "^https?://([^.]+[.][^.]+)+/.+$"
     },
     "_links": {
-      "description": "A _links-element corresponding to the HAL standard for hypermedia information",
-      "type": "object"
+      "description": "A _links-element corresponding to the HAL standard for hypermedia information, adopted from https://github.com/DaveJS/dave.schema.json/blob/master/hal-schema.json",
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "id": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#hal-member",
+            "type": "object",
+            "properties": {
+              "href": {
+                "description": "IRI of a resource",
+                "type": "string",
+                "format": "iri"
+              },
+              "type": {
+                "type": "string",
+                "pattern": "^(application|audio|example|image|message|model|multipart|text|video)\\/[a-zA-Z0-9!#\\$&\\.\\+-\\^_]{1,127}$",
+                "format": "mime",
+                "description": "Hints to the media type of a target resource"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hreflang": {
+                "type": "string",
+                "pattern": "^([a-zA-Z]{2,3}(-[a-zA-Z]{3}(-[a-zA-Z]{3}){0,2})?(-[a-zA-Z]{4})?(-([a-zA-Z]{2}|[0-9]{3}))?(-([a-zA-Z0-9]{5,8}|[0-9][a-zA-Z0-9]{3}))*([0-9A-WY-Za-wy-z](-[a-zA-Z0-9]{2,8}){1,})*(x-[a-zA-Z0-9]{2,8})?)|(x-[a-zA-Z0-9]{2,8})|(en-GB-oed)|(i-ami)|(i-bnn)|(i-default)|(i-enochian)|(i-hak)|(i-klingon)|(i-lux)|(i-mingo)|(i-navajo)|(i-pwn)|(i-tao)|(i-tay)|(i-tsu)|(sgn-BE-FR)|(sgn-BE-NL)|(sgn-CH-DE)|(art-lojban)|(cel-gaulish)|(no-bok)|(no-nyn)|(zh-guoyu)|(zh-hakka)|(zh-min)|(zh-min-nan)|(zh-xiang)$",
+                "description": "Language indication of the target resource"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "href"
+            ]
+          },
+          {
+            "type": "array",
+            "items": [
+              {
+                "$ref": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#hal-member"
+              }
+            ],
+            "uniqueItems": true,
+            "additionalProperties": false
+          }
+        ]
+      }
     },
     "errors": {
       "description": "Information on the specific errors that occured",
