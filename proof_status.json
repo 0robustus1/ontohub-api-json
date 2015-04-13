@@ -5,11 +5,7 @@
   "description": "proof status of a theorem or a proof attempt",
   "type": "object",
   "properties": {
-    "iri": {
-      "description": "The unique identifier for the proof status",
-      "type": "string",
-      "format": "uri"
-    },
+    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
     "identifier": {
       "description": "The SZS identifier of the proof status",
       "type": "string"
@@ -21,7 +17,8 @@
     "description": {
       "description": "Description of the proof status",
       "type": "string"
-    }
+    },
+    "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
   },
   "required": [
     "iri",

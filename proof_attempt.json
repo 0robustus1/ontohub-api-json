@@ -4,68 +4,97 @@
   "title": "Proof Attempt",
   "description": "A proof attempt of a theorem",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for the proof attempt",
-      "type": "string",
-      "format": "uri"
-    },
-    "number": {
-      "description": "The number of this proof attempt in relation to the theorem",
-      "type": "integer"
-    },
-    "used_prover": {
-      "description": "The name of the prover used during this attempt",
-      "type": "string"
-    },
-    "tactic_script": { "$ref": "https://masterthesis.rightsrestricted.com/api/tactic_script.json" },
-    "prover_output": {
-      "oneOf": [
-        { "$ref": "references.json#/definitions/prover_output" },
-        { "type": "null" }
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "number": {
+          "description": "The number of this proof attempt in relation to the theorem",
+          "type": "integer"
+        },
+        "used_prover": {
+          "description": "The name of the prover used during this attempt",
+          "type": "string"
+        },
+        "tactic_script": { "$ref": "https://masterthesis.rightsrestricted.com/api/tactic_script.json" },
+        "prover_output": {
+          "oneOf": [
+            { "$ref": "references.json#/definitions/prover_output" },
+            { "type": "null" }
+          ]
+        },
+        "time_taken": {
+          "description": "The time it took to perform this proof attempt (in seconds)",
+          "type": ["integer", "null"]
+        },
+        "evaluation_state": {
+          "description": "The current state of the proof evaluation",
+          "type": "string",
+          "enum": [ "done", "failed", "pending", "processing" ]
+        },
+        "theorem": { "$ref": "references.json#/definitions/theorem" },
+        "proof_attempt_configuration": {
+          "oneOf": [
+            { "$ref": "references.json#/definitions/proof_attempt_configuration" },
+            { "type": "null" }
+          ]
+        },
+        "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+        "used_axioms": {
+          "description": "Reference to all axioms used for this attempt",
+          "type": "string",
+          "format": "uri"
+        },
+        "used_theorems": {
+          "description": "Reference to all theorems used for this attempt",
+          "type": "string",
+          "format": "uri"
+        },
+        "generated_axioms": {
+          "description": "Reference to all axioms generated during this attempt",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "iri",
+        "number",
+        "evaluation_state",
+        "theorem",
+        "proof_status",
+        "used_axioms",
+        "used_theorems",
+        "generated_axioms"
       ]
     },
-    "time_taken": {
-      "description": "The time it took to perform this proof attempt (in seconds)",
-      "type": ["integer", "null"]
-    },
-    "evaluation_state": {
-      "description": "The current state of the proof evaluation",
-      "type": "string",
-      "enum": [ "done", "failed", "pending", "processing" ]
-    },
-    "theorem": { "$ref": "references.json#/definitions/theorem" },
-    "proof_attempt_configuration": {
-      "oneOf": [
-        { "$ref": "references.json#/definitions/proof_attempt_configuration" },
-        { "type": "null" }
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "number": {
+          "description": "The number of this proof attempt in relation to the theorem",
+          "type": "integer"
+        },
+        "used_prover": {
+          "description": "The name of the prover used during this attempt",
+          "type": "string"
+        },
+        "time_taken": {
+          "description": "The time it took to perform this proof attempt (in seconds)",
+          "type": ["integer", "null"]
+        },
+        "evaluation_state": {
+          "description": "The current state of the proof evaluation",
+          "type": "string",
+          "enum": [ "done", "failed", "pending", "processing" ]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri",
+        "number",
+        "evaluation_state",
+        "_links"
       ]
-    },
-    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
-    "used_axioms": {
-      "description": "Reference to all axioms used for this attempt",
-      "type": "string",
-      "format": "uri"
-    },
-    "used_theorems": {
-      "description": "Reference to all theorems used for this attempt",
-      "type": "string",
-      "format": "uri"
-    },
-    "generated_axioms": {
-      "description": "Reference to all axioms generated during this attempt",
-      "type": "string",
-      "format": "uri"
     }
-  },
-  "required": [
-    "iri",
-    "number",
-    "evaluation_state",
-    "theorem",
-    "proof_status",
-    "used_axioms",
-    "used_theorems",
-    "generated_axioms"
   ]
 }

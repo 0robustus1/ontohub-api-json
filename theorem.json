@@ -4,46 +4,70 @@
   "title": "Theorem",
   "description": "A theorem inside of an ontology",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for the theorem",
-      "type": "string",
-      "format": "uri"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the theorem — usually auto-generated.",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The definition of the theorem",
+          "type": "string"
+        },
+        "evaluation_state": {
+          "description": "The current state of the proof evaluation",
+          "type": "string",
+          "enum": [ "done", "failed", "pending", "processing" ]
+        },
+        "proof_status": { "$ref": "references.json#/definitions/proof_status" },
+        "ontology": { "$ref": "references.json#/definitions/ontology" },
+        "symbols": {
+          "description": "Reference to all symbols used in this theorem",
+          "$ref": "generic/definitions.json#/definitions/iri"
+        },
+        "proof_attempts": {
+          "description": "Reference to all proof attempts for this theorem",
+          "$ref": "generic/definitions.json#/definitions/iri"
+        }
+      },
+      "required": [
+        "iri",
+        "name",
+        "definition",
+        "evaluation_state",
+        "proof_status",
+        "ontology",
+        "symbols",
+        "proof_attempts"
+      ]
     },
-    "name": {
-      "description": "The name of the theorem — usually auto-generated.",
-      "type": "string"
-    },
-    "definition": {
-      "description": "The definition of the theorem",
-      "type": "string"
-    },
-    "evaluation_state": {
-      "description": "The current state of the proof evaluation",
-      "type": "string",
-      "enum": [ "done", "failed", "pending", "processing" ]
-    },
-    "proof_status": { "$ref": "references.json#/definitions/proof_status" },
-    "ontology": { "$ref": "references.json#/definitions/ontology" },
-    "symbols": {
-      "description": "Reference to all symbols used in this theorem",
-      "type": "string",
-      "format": "uri"
-    },
-    "proof_attempts": {
-      "description": "Reference to all proof attempts for this theorem",
-      "type": "string",
-      "format": "uri"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the theorem — usually auto-generated.",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The definition of the theorem",
+          "type": "string"
+        },
+        "evaluation_state": {
+          "description": "The current state of the proof evaluation",
+          "type": "string",
+          "enum": [ "done", "failed", "pending", "processing" ]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri",
+        "name",
+        "definition",
+        "evaluation_state",
+        "_links"
+      ]
     }
-  },
-  "required": [
-    "iri",
-    "name",
-    "definition",
-    "evaluation_state",
-    "proof_status",
-    "ontology",
-    "symbols",
-    "proof_attempts"
   ]
 }

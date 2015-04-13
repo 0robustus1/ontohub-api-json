@@ -4,44 +4,64 @@
   "title": "Proof Attempt Configuration",
   "description": "A configuration of a proof attempt",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for the proof attempt",
-      "type": "string",
-      "format": "uri"
-    },
-    "number": {
-      "description": "The identifying number of the configuration. The number is relative to the ontology",
-      "type": "integer"
-    },
-    "selected_prover": {
-      "description": "The name of the prover",
-      "type": ["string", "null"]
-    },
-    "selected_timeout": {
-      "description": "The timeout for the proof attempt (in seconds)",
-      "type": ["integer", "null"]
-    },
-    "selected_logic_mapping": {
-      "oneOf": [
-        { "$ref": "references.json#/definitions/logic_mapping" },
-        { "type": "null" }
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "number": {
+          "description": "The identifying number of the configuration. The number is relative to the ontology",
+          "type": "integer"
+        },
+        "selected_prover": {
+          "description": "The name of the prover",
+          "type": ["string", "null"]
+        },
+        "selected_timeout": {
+          "description": "The timeout for the proof attempt (in seconds)",
+          "type": ["integer", "null"]
+        },
+        "selected_logic_mapping": {
+          "oneOf": [
+            { "$ref": "references.json#/definitions/logic_mapping" },
+            { "type": "null" }
+          ]
+        },
+        "selected_axioms": {
+          "description": "Reference to all axioms selected for this attempt",
+          "$ref": "generic/definitions.json#/definitions/iri"
+        },
+        "selected_theorems": {
+          "description": "Reference to all theorems selected for this attempt",
+          "$ref": "generic/definitions.json#/definitions/iri"
+        }
+      },
+      "required": [
+        "iri",
+        "selected_axioms",
+        "selected_theorems"
       ]
     },
-    "selected_axioms": {
-      "description": "Reference to all axioms selected for this attempt",
-      "type": "string",
-      "format": "uri"
-    },
-    "selected_theorems": {
-      "description": "Reference to all theorems selected for this attempt",
-      "type": "string",
-      "format": "uri"
+
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "number": {
+          "description": "The identifying number of the configuration. The number is relative to the ontology",
+          "type": "integer"
+        },
+        "selected_prover": {
+          "description": "The name of the prover",
+          "type": ["string", "null"]
+        },
+        "selected_timeout": {
+          "description": "The timeout for the proof attempt (in seconds)",
+          "type": ["integer", "null"]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri", "_links"
+      ]
     }
-  },
-  "required": [
-    "iri",
-    "selected_axioms",
-    "selected_theorems"
   ]
 }

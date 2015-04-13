@@ -4,24 +4,40 @@
   "title": "License Model",
   "description": "A license model",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for a license model",
-      "type": "string",
-      "format": "uri"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the license model",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the license model",
+          "type": "string"
+        },
+        "url": {
+          "description": "A URL which should contain documentation of the license model. Is not part of Ontohub",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [ "iri", "name" ]
     },
-    "name": {
-      "description": "The name of the license model",
-      "type": "string"
-    },
-    "description": {
-      "description": "A description of the license model",
-      "type": "string"
-    },
-    "url": {
-      "description": "A URL which should contain documentation of the license model. Is not part of Ontohub",
-      "type": "string",
-      "format": "uri"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the license model",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the license model",
+          "type": "string"
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [ "iri", "name", "_links" ]
     }
-  }
+  ]
 }

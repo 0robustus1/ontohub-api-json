@@ -4,45 +4,77 @@
   "title": "Symbol",
   "description": "A symbol defined by an ontology",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for the symbol",
-      "type": "string",
-      "format": "uri"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the symbol",
+          "type": "string"
+        },
+        "kind": {
+          "description": "The kind of symbol",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The definition of the symbol",
+          "type": "string"
+        },
+        "label": {
+          "description": "The label that is attached to the symbol",
+          "type": ["string", "null"]
+        },
+        "comment": {
+          "description": "A comment on the symbol",
+          "type": ["string", "null"]
+        },
+        "ontology": { "$ref": "references.json#/definitions/ontology" },
+        "sentences": {
+          "description": "Reference to all sentences that use the symbol in this ontology",
+          "$ref": "generic/definitions.json#/definitions/iri"
+        }
+      },
+      "required": [
+        "iri",
+        "name",
+        "kind",
+        "definition",
+        "ontology",
+        "sentences"
+      ]
     },
-    "name": {
-      "description": "The name of the symbol",
-      "type": "string"
-    },
-    "kind": {
-      "description": "The kind of symbol",
-      "type": "string"
-    },
-    "definition": {
-      "description": "The definition of the symbol",
-      "type": "string"
-    },
-    "label": {
-      "description": "The label that is attached to the symbol",
-      "type": ["string", "null"]
-    },
-    "comment": {
-      "description": "A comment on the symbol",
-      "type": ["string", "null"]
-    },
-    "ontology": { "$ref": "references.json#/definitions/ontology" },
-    "sentences": {
-      "description": "Reference to all sentences that use the symbol in this ontology",
-      "type": "string",
-      "format": "uri"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the symbol",
+          "type": "string"
+        },
+        "kind": {
+          "description": "The kind of symbol",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The definition of the symbol",
+          "type": "string"
+        },
+        "label": {
+          "description": "The label that is attached to the symbol",
+          "type": ["string", "null"]
+        },
+        "comment": {
+          "description": "A comment on the symbol",
+          "type": ["string", "null"]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri",
+        "name",
+        "kind",
+        "definition",
+        "_links"
+      ]
     }
-  },
-  "required": [
-    "iri",
-    "name",
-    "kind",
-    "definition",
-    "ontology",
-    "sentences"
   ]
 }

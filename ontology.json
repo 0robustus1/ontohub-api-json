@@ -4,96 +4,137 @@
   "title": "Ontology",
   "description": "An ontology as recorded by Ontohub",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for an ontology",
-      "type": "string",
-      "format": "uri"
-    },
-    "name": {
-      "description": "The name of the ontology",
-      "type": "string"
-    },
-    "acronym": {
-      "description": "Acronym of the name of the ontology",
-      "type": ["string", "null"]
-    },
-    "description": {
-      "description": "A short description of the ontology",
-      "type": "string"
-    },
-    "documentation": {
-      "description": "Includes a reference (usually a URI) to a documentation resource",
-      "type": ["string", "null"]
-    },
-    "evaluation_state": {
-      "description": "The current state of the evaluation of the ontology",
-      "type": "string"
-    },
-    "basepath": {
-      "description": "The path to the ontology relative to the git repositories root directory",
-      "type": "string"
-    },
-    "file_extension": {
-      "description": "Actual file extension of the ontology file in the repository",
-      "type": "string"
-    },
-    "logic": { "$ref": "references.json#/definitions/logic" },
-    "repository": { "$ref": "references.json#/definitions/repository" },
-    "parent": {
-      "oneOf": [
-        { "$ref": "references.json#/definitions/ontology" },
-        { "type": "null" }
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the ontology",
+          "type": "string"
+        },
+        "acronym": {
+          "description": "Acronym of the name of the ontology",
+          "type": ["string", "null"]
+        },
+        "description": {
+          "description": "A short description of the ontology",
+          "type": "string"
+        },
+        "documentation": {
+          "description": "Includes a reference (usually a URI) to a documentation resource",
+          "type": ["string", "null"]
+        },
+        "evaluation_state": {
+          "description": "The current state of the evaluation of the ontology",
+          "type": "string"
+        },
+        "basepath": {
+          "description": "The path to the ontology relative to the git repositories root directory",
+          "type": "string"
+        },
+        "file_extension": {
+          "description": "Actual file extension of the ontology file in the repository",
+          "type": "string"
+        },
+        "logic": { "$ref": "references.json#/definitions/logic" },
+        "repository": { "$ref": "references.json#/definitions/repository" },
+        "parent": {
+          "oneOf": [
+            { "$ref": "references.json#/definitions/ontology" },
+            { "type": "null" }
+          ]
+        },
+        "ontology_type": {
+          "oneOf": [
+            { "$ref": "references.json#/definitions/ontology_type" },
+            { "type": "null" }
+          ]
+        },
+        "current_ontology_version": { "$ref": "references.json#/definitions/ontology_version" },
+        "license_models": {
+          "type": "array",
+          "items": { "$ref": "references.json#/definitions/license_model" }
+        },
+        "formality_level": {
+          "oneOf": [
+            { "$ref": "references.json#/definitions/formality_level" },
+            { "type": "null" }
+          ]
+        },
+        "ontology_versions": {
+          "description": "Reference to all ontology versions of this ontology",
+          "type": "string",
+          "format": "uri"
+        },
+        "symbols": {
+          "description": "Reference to all symbols of this ontology",
+          "type": "string",
+          "format": "uri"
+        },
+        "sentences": {
+          "description": "Reference to all sentences of this ontology",
+          "type": "string",
+          "format": "uri"
+        },
+        "mappings": {
+          "description": "Reference to all mappings defined by this ontology",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "iri",
+        "logic",
+        "repository",
+        "ontology_versions",
+        "symbols",
+        "sentences",
+        "mappings",
+        "name",
+        "basepath",
+        "file_extension"
       ]
     },
-    "ontology_type": {
-      "oneOf": [
-        { "$ref": "references.json#/definitions/ontology_type" },
-        { "type": "null" }
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the ontology",
+          "type": "string"
+        },
+        "acronym": {
+          "description": "Acronym of the name of the ontology",
+          "type": ["string", "null"]
+        },
+        "description": {
+          "description": "A short description of the ontology",
+          "type": "string"
+        },
+        "documentation": {
+          "description": "Includes a reference (usually a URI) to a documentation resource",
+          "type": ["string", "null"]
+        },
+        "evaluation_state": {
+          "description": "The current state of the evaluation of the ontology",
+          "type": "string"
+        },
+        "basepath": {
+          "description": "The path to the ontology relative to the git repositories root directory",
+          "type": "string"
+        },
+        "file_extension": {
+          "description": "Actual file extension of the ontology file in the repository",
+          "type": "string"
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri",
+        "name",
+        "basepath",
+        "file_extension",
+        "_links"
       ]
-    },
-    "current_ontology_version": { "$ref": "references.json#/definitions/ontology_version" },
-    "license_models": {
-      "type": "array",
-      "items": { "$ref": "references.json#/definitions/license_model" }
-    },
-    "formality_level": {
-      "oneOf": [
-        { "$ref": "references.json#/definitions/formality_level" },
-        { "type": "null" }
-      ]
-    },
-    "ontology_versions": {
-      "description": "Reference to all ontology versions of this ontology",
-      "type": "string",
-      "format": "uri"
-    },
-    "symbols": {
-      "description": "Reference to all symbols of this ontology",
-      "type": "string",
-      "format": "uri"
-    },
-    "sentences": {
-      "description": "Reference to all sentences of this ontology",
-      "type": "string",
-      "format": "uri"
-    },
-    "mappings": {
-      "description": "Reference to all mappings defined by this ontology",
-      "type": "string",
-      "format": "uri"
     }
-  },
-  "required": [
-    "iri",
-    "logic",
-    "repository",
-    "ontology_versions",
-    "symbols",
-    "sentences",
-    "mappings",
-    "name",
-    "basepath",
-    "file_extension"
   ]
 }

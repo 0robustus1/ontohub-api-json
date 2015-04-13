@@ -4,48 +4,88 @@
   "title": "Logic Mapping",
   "description": "A mapping between two logics",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for the logic-mapping",
-      "type": "string",
-      "format": "uri"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "standardization_status": {
+          "description": "The standardization status of the mapping",
+          "type": "string"
+        },
+        "defined_by": {
+          "description": "The authority that defined the mapping",
+          "type": ["string", "null"]
+        },
+        "faithfulness": {
+          "description": "Degree of faithfulness of the mapping",
+          "type": "string"
+        },
+        "exactness": {
+          "description": "Degree of exactness of the mapping",
+          "type": "string"
+        },
+        "theoroidalness": {
+          "description": "Degree of theoroidalness of the mapping",
+          "type": "string"
+        },
+        "projection": {
+          "description": "Describes whether the mapping is a projection",
+          "type": "boolean"
+        },
+        "source_logic": { "$ref": "references.json#/definitions/logic" },
+        "target_logic": { "$ref": "references.json#/definitions/logic" }
+      },
+      "required": [
+        "iri",
+        "standardization_status",
+        "defined_by",
+        "faithfulness",
+        "theoroidalness",
+        "exactness",
+        "projection",
+        "source_logic",
+        "target_logic"
+      ]
     },
-    "standardization_status": {
-      "description": "The standardization status of the mapping",
-      "type": "string"
-    },
-    "defined_by": {
-      "description": "The authority that defined the mapping",
-      "type": ["string", "null"]
-    },
-    "faithfulness": {
-      "description": "Degree of faithfulness of the mapping",
-      "type": "string"
-    },
-    "exactness": {
-      "description": "Degree of exactness of the mapping",
-      "type": "string"
-    },
-    "theoroidalness": {
-      "description": "Degree of theoroidalness of the mapping",
-      "type": "string"
-    },
-    "projection": {
-      "description": "Describes whether the mapping is a projection",
-      "type": "boolean"
-    },
-    "source_logic": { "$ref": "references.json#/definitions/logic" },
-    "target_logic": { "$ref": "references.json#/definitions/logic" }
-  },
-  "required": [
-    "iri",
-    "standardization_status",
-    "defined_by",
-    "faithfulness",
-    "theoroidalness",
-    "exactness",
-    "projection",
-    "source_logic",
-    "target_logic"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "standardization_status": {
+          "description": "The standardization status of the mapping",
+          "type": "string"
+        },
+        "defined_by": {
+          "description": "The authority that defined the mapping",
+          "type": ["string", "null"]
+        },
+        "faithfulness": {
+          "description": "Degree of faithfulness of the mapping",
+          "type": "string"
+        },
+        "exactness": {
+          "description": "Degree of exactness of the mapping",
+          "type": "string"
+        },
+        "theoroidalness": {
+          "description": "Degree of theoroidalness of the mapping",
+          "type": "string"
+        },
+        "projection": {
+          "description": "Describes whether the mapping is a projection",
+          "type": "boolean"
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri",
+        "standardization_status",
+        "defined_by",
+        "faithfulness",
+        "theoroidalness",
+        "exactness",
+        "projection",
+        "_links"
+      ]
+    }
   ]
 }

@@ -4,27 +4,44 @@
   "title": "Ontology Type",
   "description": "A specific type of an ontology",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for an ontology type",
-      "type": "string",
-      "format": "uri"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the formality level",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the formality level",
+          "type": ["string", "null"]
+        },
+        "documentation_url": {
+          "description": "A url to specific documentation for this type",
+          "type": ["string", "null"],
+          "format": "uri"
+        }
+      },
+      "required": [
+        "iri", "name"
+      ]
     },
-    "name": {
-      "description": "The name of the formality level",
-      "type": "string"
-    },
-    "description": {
-      "description": "A description of the formality level",
-      "type": ["string", "null"]
-    },
-    "documentation_url": {
-      "description": "A url to specific documentation for this type",
-      "type": ["string", "null"],
-      "format": "uri"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the ontology type",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the ontology type",
+          "type": ["string", "null"]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri", "name", "_links"
+      ]
     }
-  },
-  "required": [
-    "iri", "name"
   ]
 }

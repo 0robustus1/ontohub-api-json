@@ -4,37 +4,61 @@
   "title": "Sentence",
   "description": "A sentence inside of an ontology",
   "type": "object",
-  "properties": {
-    "iri": {
-      "description": "The unique identifier for the sentence",
-      "type": "string",
-      "format": "uri"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the sentence — usually auto-generated.",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The definition of the sentence",
+          "type": "string"
+        },
+        "imported": {
+          "description": "Denotes whether this sentence was imported from another ontology",
+          "type": "boolean"
+        },
+        "ontology": { "$ref": "references.json#/definitions/ontology" },
+        "symbols": {
+          "description": "Reference to all symbols used in this sentence",
+          "$ref": "generic/definitions.json#/definitions/iri"
+        }
+      },
+      "required": [
+        "iri",
+        "name",
+        "definition",
+        "imported",
+        "ontology",
+        "symbols"
+      ]
     },
-    "name": {
-      "description": "The name of the sentence — usually auto-generated.",
-      "type": "string"
-    },
-    "definition": {
-      "description": "The definition of the sentence",
-      "type": "string"
-    },
-    "imported": {
-      "description": "Denotes whether this sentence was imported from another ontology",
-      "type": "boolean"
-    },
-    "ontology": { "$ref": "references.json#/definitions/ontology" },
-    "symbols": {
-      "description": "Reference to all symbols used in this sentence",
-      "type": "string",
-      "format": "uri"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the sentence — usually auto-generated.",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The definition of the sentence",
+          "type": "string"
+        },
+        "imported": {
+          "description": "Denotes whether this sentence was imported from another ontology",
+          "type": "boolean"
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri",
+        "name",
+        "definition",
+        "imported",
+        "_links"
+      ]
     }
-  },
-  "required": [
-    "iri",
-    "name",
-    "definition",
-    "imported",
-    "ontology",
-    "symbols"
   ]
 }

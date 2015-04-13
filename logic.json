@@ -5,11 +5,7 @@
   "description": "A logic as registered with Ontohub",
   "type": "object",
   "properties": {
-    "iri": {
-      "description": "The unique identifier for the logic",
-      "type": "string",
-      "format": "uri"
-    },
+    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
     "name": {
       "description": "The name of the logic",
       "type": "string"
@@ -25,6 +21,10 @@
     "defined_by": {
       "description": "The resource which defined the logic",
       "type": ["string", "null"]
-    }
-  }
+    },
+    "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "iri", "name"
+  ]
 }
