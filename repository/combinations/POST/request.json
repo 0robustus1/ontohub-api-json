@@ -8,10 +8,12 @@
     "nodes": {
       "description": "A list of ontology iris to combine. This can also be models or specifications in supported formats.",
       "type": "array",
-      "items": {
-        "description": "A resolvable iri of an ontology",
-        "type": "string"
-      }
+      "items": { "$ref": "../../../generic/definitions.json#/definitions/iri" }
+    },
+    "edges": {
+      "description": "A list of mapping iris to combine.",
+      "type": "array",
+      "items": { "$ref": "../../../generic/definitions.json#/definitions/iri" }
     },
     "combination_name": {
       "description": "The name the ontology, that represents the combination, will have.",
