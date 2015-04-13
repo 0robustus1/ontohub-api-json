@@ -1,0 +1,29 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/repositories/POST/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: POST on repositories",
+  "description": "Describes the request body of a request to create a repository",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "path": { "type": "string" },
+    "description": { "type": ["string", "null"] },
+    "source": {
+      "oneOf": [
+        {
+          "description": " Only needs to be present when creating mirror or fork",
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "enum": [ "mirror", "fork" ],
+            "address": { "$ref": "../../generic/definitions.json#/definitions/iri" }
+          },
+          "required": ["type", "address"]
+        },
+        { "type": "null" }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
