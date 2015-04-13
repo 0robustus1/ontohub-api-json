@@ -10,11 +10,7 @@
           "description": "The name of the repository",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the repository",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "logic": {
@@ -25,11 +21,7 @@
           "description": "The name of the logic",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the logic",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "ontology": {
@@ -40,11 +32,7 @@
           "description": "The name of the ontology",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the ontology",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "license_model": {
@@ -55,11 +43,7 @@
           "description": "The name of the license model",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the license model",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "formality_level": {
@@ -70,11 +54,7 @@
           "description": "The name of the formality level",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the formality level",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "ontology_type": {
@@ -85,11 +65,7 @@
           "description": "The name of the ontology type",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the ontology type",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "ontology_version": {
@@ -100,22 +76,14 @@
           "description": "The version number of the version of the ontology",
           "type": "integer"
         },
-        "iri": {
-          "description": "The unique identifier of the ontology-version",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "logic_mapping": {
       "description": "Reference to a mapping between logics",
       "type": "object",
       "properties": {
-        "iri": {
-          "description": "The unique identifier of the logic mapping",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "mapping": {
@@ -126,11 +94,7 @@
           "description": "The name of the mapping",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the mapping",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "sentence": {
@@ -141,11 +105,7 @@
           "description": "The name of the sentence",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the sentence",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "symbol": {
@@ -156,11 +116,7 @@
           "description": "The name of the symbol",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the symbol",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "theorem": {
@@ -171,37 +127,24 @@
           "description": "The name of the theorem",
           "type": "string"
         },
-        "iri": {
-          "description": "The unique identifier of the theorem",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "proof_attempt": {
       "description": "Reference to a proof attempt",
       "type": "object",
       "properties": {
-        "iri": {
-          "description": "The unique identifier of the proof attempt",
-          "type": "string",
-          "format": "uri"
-        },
         "number": {
           "description": "The number of the proof attempt relative to its theorem",
           "type": "integer"
-        }
+        },
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "proof_status": {
       "description": "Reference to a proof status",
       "type": "object",
       "properties": {
-        "iri": {
-          "description": "The unique identifier of the proof status",
-          "type": "string",
-          "format": "uri"
-        },
         "identifier": {
           "description": "The identifier of the proof status",
           "type": "string"
@@ -209,29 +152,22 @@
         "name": {
           "description": "The name of the proof status (human-readable)",
           "type": "string"
-        }
+        },
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "prover_output": {
       "description": "Reference to a prover output",
       "type": "object",
       "properties": {
-        "iri": {
-          "description": "The unique identifier of the prover output",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "proof_attempt_configuration": {
       "description": "Reference to a proof attempt configuration",
       "type": "object",
       "properties": {
-        "iri": {
-          "description": "The unique identifier of the proof attempt configuration",
-          "type": "string",
-          "format": "uri"
-        }
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
     },
     "comment": {
