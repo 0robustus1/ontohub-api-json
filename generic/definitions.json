@@ -2,8 +2,15 @@
   "id": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
+    "iri": {
+      "description": "The IRI of a resource",
+      "type": "string",
+      "format": "iri",
+      "pattern": "^https?://([^.]+[.][^.]+)+/.+$"
+    },
     "_links": {
-
+      "description": "A _links-element corresponding to the HAL standard for hypermedia information",
+      "type": "object"
     },
     "errors": {
       "description": "Information on the specific errors that occured",
