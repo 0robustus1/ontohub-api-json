@@ -247,6 +247,17 @@
       "properties": {
         "iri": { "$ref": "generic/definitions.json#/definitions/iri" }
       }
+    },
+    "task": {
+      "description": "Reference to a task",
+      "type": "object",
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the task",
+          "type": "string"
+        }
+      }
     }
   }
 }

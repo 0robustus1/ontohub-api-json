@@ -1,0 +1,43 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/task.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Task",
+  "description": "A task",
+  "type": "object",
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the task",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the task",
+          "type": ["string", "null"]
+        },
+        "ontologies": { "$ref": "generic/definitions.json#/definitions/iri" }
+      },
+      "required": [
+        "iri", "name", "ontologies"
+      ]
+    },
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the task",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the task",
+          "type": "string"
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri", "name", "_links"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/task/PATCH/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: PATCH on a task",
+  "description": "Describes the request body of a request to update a task",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": ["string", "null"] }
+  },
+  "required": []
+}
