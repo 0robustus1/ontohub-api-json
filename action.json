@@ -1,0 +1,22 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/action.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Action",
+  "description": "Represents an asynchronous long-running request",
+  "type": "object",
+  "properties": {
+    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+    "status": {
+      "description": "The status of the resource in question",
+      "type": "string"
+    },
+    "eta": {
+      "description": "estimated time of arrival in seconds",
+      "type": "integer"
+    },
+    "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+  },
+  "required": [
+    "iri", "status", "eta"
+  ]
+}
