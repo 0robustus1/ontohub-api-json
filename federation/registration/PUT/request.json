@@ -1,0 +1,18 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/federation/registration/POST/request.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request: PUT registration",
+  "description": "Describes the request body of a request to change a registration with a federation",
+  "type": "object",
+  "properties": {
+    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+    "instance": {
+      "description": "List of IRIs of the instance",
+      "type": "array",
+      "items": { "$ref": "generic/definitions.json#/definitions/iri" }
+    }
+  },
+  "required": [
+    "iri", "instance"
+  ]
+}

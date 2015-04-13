@@ -1,0 +1,37 @@
+{
+  "id": "https://masterthesis.rightsrestricted.com/api/federation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Federation",
+  "description": "The Federation the Ontohub-instance is part of",
+  "type": "object",
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "instances": {
+          "description": "A list of the instances registered in the federation",
+          "type": "array",
+          "items": {
+            "iri": {
+              "description": "The main IRI of the instance (e.g. the one the instance registered with)",
+              "$ref": "generic/definitions.json#/definitions/iri"
+            },
+            "instance": {
+              "description": "List of IRIs of the instance",
+              "type": "array",
+              "items": { "$ref": "generic/definitions.json#/definitions/iri" }
+            }
+          }
+        }
+      },
+      "required": [ "iri", "instances" ]
+    },
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [ "iri", "_links" ]
+    }
+  ]
+}
