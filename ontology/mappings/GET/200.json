@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/commands/mappings.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/mappings/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///mappings",
   "description": "A list of mapping references for that ontology",

@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/commands/children.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/children/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///children",
   "description": "A list of child-ontology references for that ontology",

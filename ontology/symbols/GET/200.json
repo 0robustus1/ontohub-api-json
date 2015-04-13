@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/commands/symbols.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/symbols/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///symbols",
   "description": "A list of symbol references for that ontology",

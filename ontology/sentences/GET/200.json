@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/commands/sentences.json#",
+  "id": "https://masterthesis.rightsrestricted.com/api/ontology/sentences/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///sentences",
   "description": "A list of sentence references for that ontology",
