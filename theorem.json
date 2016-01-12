@@ -19,7 +19,7 @@
         "evaluation_state": {
           "description": "The current state of the proof evaluation",
           "type": "string",
-          "enum": [ "done", "failed", "pending", "processing" ]
+          "enum": [ "not_started_yet", "failed", "no_result", "pending", "processing", "done" ]
         },
         "proof_status": { "$ref": "references.json#/definitions/proof_status" },
         "ontology": { "$ref": "references.json#/definitions/ontology" },
