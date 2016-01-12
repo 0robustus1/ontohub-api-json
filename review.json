@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/review.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/review.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Review",
   "description": "A review of an ontology",

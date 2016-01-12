@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Ontology",
   "description": "An ontology as recorded by Ontohub",

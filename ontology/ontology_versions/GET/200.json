@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/ontology_versions/GET/200.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology/ontology_versions/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///ontology_versions",
   "description": "A list of ontology version references for that ontology",

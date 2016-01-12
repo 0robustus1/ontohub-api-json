@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/repositories/POST/request.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/repositories/POST/request.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Request: POST on repositories",
   "description": "Describes the request body of a request to create a repository",

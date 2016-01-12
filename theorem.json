@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/theorem.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/theorem.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Theorem",
   "description": "A theorem inside of an ontology",

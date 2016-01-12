@@ -1,8 +1,8 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/symbols/GET/200.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology/symbols/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///symbols",
   "description": "A list of symbol references for that ontology",
   "type": "array",
-  "items": { "$ref": "https://masterthesis.rightsrestricted.com/api/references.json#/definitions/symbol" }
+  "items": { "$ref": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/references.json#/definitions/symbol" }
 }

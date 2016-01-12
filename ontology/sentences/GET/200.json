@@ -1,8 +1,8 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/sentences/GET/200.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology/sentences/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///sentences",
   "description": "A list of sentence references for that ontology",
   "type": "array",
-  "items": { "$ref": "https://masterthesis.rightsrestricted.com/api/references.json#/definitions/sentence" }
+  "items": { "$ref": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/references.json#/definitions/sentence" }
 }

@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/category.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/category.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Category",
   "description": "A Category as described by Domain Fields Core",

@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/comment.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/comment.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Comment",
   "description": "A comment in the application",

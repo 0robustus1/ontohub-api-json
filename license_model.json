@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/license_model.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/license_model.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "License Model",
   "description": "A license model",

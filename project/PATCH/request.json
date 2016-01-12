@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/project/PATCH/request.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/project/PATCH/request.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Request: PATCH on a project",
   "description": "Describes the request body of a request to update a project",

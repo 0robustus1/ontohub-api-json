@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/500.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/500.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "500 (Internal Server Error)",
   "description": "This is a generic 500 (Internal Server Error) response",

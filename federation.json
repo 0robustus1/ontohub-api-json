@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/federation.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/federation.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Federation",
   "description": "The Federation the Ontohub-instance is part of",

@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/action.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/action.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Action",
   "description": "Represents an asynchronous long-running request",
