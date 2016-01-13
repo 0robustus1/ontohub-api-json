@@ -4,5 +4,5 @@
   "title": "///ontology_versions",
   "description": "A list of ontology version references for that ontology",
   "type": "array",
-  "items": { "$ref": "../../references.json#/definitions/ontology_version" }
+  "items": { "$ref": "../../../references.json#/definitions/ontology_version" }
 }
