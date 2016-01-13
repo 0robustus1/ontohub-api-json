@@ -4,19 +4,39 @@
   "title": "Formality Level",
   "description": "A formality level",
   "type": "object",
-  "properties": {
-    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
-    "name": {
-      "description": "The name of the formality level",
-      "type": "string"
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the formality level",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the formality level",
+          "type": ["string", "null"]
+        }
+      },
+      "required": [
+        "iri", "name"
+      ]
     },
-    "description": {
-      "description": "A description of the formality level",
-      "type": ["string", "null"]
-    },
-    "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
-  },
-  "required": [
-    "iri", "name"
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the formality level",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the formality level",
+          "type": ["string", "null"]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      },
+      "required": [
+        "iri", "name", "_links"
+      ]
+    }
   ]
 }
