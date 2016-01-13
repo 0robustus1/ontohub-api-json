@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/tactic_script.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/tactic_script.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Tactic Script",
   "description": "The tactic script generated in a proof attempt",

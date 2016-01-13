@@ -1,8 +1,8 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/mappings/GET/200.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology/mappings/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///mappings",
   "description": "A list of mapping references for that ontology",
   "type": "array",
-  "items": { "$ref": "https://masterthesis.rightsrestricted.com/api/references.json#/definitions/mapping" }
+  "items": { "$ref": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/references.json#/definitions/mapping" }
 }

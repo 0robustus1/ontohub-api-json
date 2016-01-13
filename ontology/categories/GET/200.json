@@ -1,8 +1,8 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/categories/GET/200.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology/categories/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///categories",
   "description": "A list of categories the ontology belongs to",
   "type": "array",
-  "items": { "$ref": "https://masterthesis.rightsrestricted.com/api/category.json" }
+  "items": { "$ref": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/category.json" }
 }

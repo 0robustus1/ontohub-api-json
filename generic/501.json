@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/501.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/501.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "501 (Not Implemented)",
   "description": "This is a generic 501 (Not Implemented) response",

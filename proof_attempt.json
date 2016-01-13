@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/proof_attempt.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/proof_attempt.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Proof Attempt",
   "description": "A proof attempt of a theorem",
@@ -16,7 +16,7 @@
           "description": "The name of the prover used during this attempt",
           "type": "string"
         },
-        "tactic_script": { "$ref": "https://masterthesis.rightsrestricted.com/api/tactic_script.json" },
+        "tactic_script": { "$ref": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/tactic_script.json" },
         "prover_output": {
           "oneOf": [
             { "$ref": "references.json#/definitions/prover_output" },

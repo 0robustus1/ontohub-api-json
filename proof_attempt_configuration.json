@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/proof_attempt_configuration.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/proof_attempt_configuration.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Proof Attempt Configuration",
   "description": "A configuration of a proof attempt",

@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/303.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/303.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "303 (See Other)",
   "description": "This is a generic 303 (See Other) response",

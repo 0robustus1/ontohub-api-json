@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/task/PUT/request.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/task/PUT/request.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Request: PUT on a task",
   "description": "Describes the request body of a request to update a task",

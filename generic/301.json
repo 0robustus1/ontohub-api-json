@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/301.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/301.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "301 (Moved Permanently)",
   "description": "This is a generic 301 (Moved Permanently) response",

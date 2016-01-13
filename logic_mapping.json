@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/logic_mapping.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/logic_mapping.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Logic Mapping",
   "description": "A mapping between two logics",

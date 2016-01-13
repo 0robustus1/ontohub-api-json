@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/logic.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/logic.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Logic",
   "description": "A logic as registered with Ontohub",

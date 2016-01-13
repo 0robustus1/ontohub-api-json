@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/mapping.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/mapping.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Mapping",
   "description": "A mapping defined by an ontology",

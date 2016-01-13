@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/definitions.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
     "iri": {
@@ -14,7 +14,7 @@
       "additionalProperties": {
         "oneOf": [
           {
-            "id": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#hal-member",
+            "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/definitions.json#hal-member",
             "type": "object",
             "properties": {
               "href": {
@@ -46,7 +46,7 @@
             "type": "array",
             "items": [
               {
-                "$ref": "https://masterthesis.rightsrestricted.com/api/generic/definitions.json#hal-member"
+                "$ref": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/definitions.json#hal-member"
               }
             ],
             "uniqueItems": true,

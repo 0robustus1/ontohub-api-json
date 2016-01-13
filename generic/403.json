@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/403.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/403.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "403 (Forbidden)",
   "description": "This is a generic 403 (Forbidden) response",

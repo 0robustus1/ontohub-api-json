@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology_type.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology_type.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Ontology Type",
   "description": "A specific type of an ontology",

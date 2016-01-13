@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/400.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/400.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "400 (Not Found)",
   "description": "This is a generic 400 (Not Found) response",

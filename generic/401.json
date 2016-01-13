@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/generic/401.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/generic/401.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "401 (Unauthorized)",
   "description": "This is a generic 401 (Unauthorized) response",

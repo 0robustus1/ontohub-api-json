@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/references.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/references.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
     "repository": {

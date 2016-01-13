@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/task.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/task.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Task",
   "description": "A task",

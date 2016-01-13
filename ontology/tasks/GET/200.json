@@ -1,5 +1,5 @@
 {
-  "id": "https://masterthesis.rightsrestricted.com/api/ontology/tasks/GET/200.json#",
+  "id": "https://raw.githubusercontent.com/ontohub/ontohub-api-json/develop/ontology/tasks/GET/200.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "///tasks",
   "description": "A list of tasks the ontology fulfills to",
