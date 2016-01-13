@@ -4,55 +4,111 @@
   "title": "Repository",
   "description": "A repository inside of Ontohub",
   "type": "object",
-  "properties": {
-    "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
-    "name": {
-      "description": "The name of the repository",
-      "type": "string"
-    },
-    "path": {
-      "description": "The name of the directory that represents the repository",
-      "type": "string"
-    },
-    "description": {
-      "description": "A description of the repository",
-      "type": "string"
-    },
-    "remote_origin": {
-      "description": "True if the repository was created from a remote origin.",
-      "type": "boolean"
-    },
-    "source": {
-      "oneOf": [
-        {
-          "description": "Source of the repository, only present if remote_origin is true",
-          "type": "object",
-          "properties": {
-            "type": {
-              "description": "Currently either mirror or fork",
-              "type": "string",
-              "enum": [ "mirror", "fork" ]
-            },
-            "source_type": {
-              "description": "The type of the source. Currently either git or svn",
-              "type": "string",
-              "enum": [ "git", "svn" ]
-            },
-            "state": {
-              "description": "State of the mirroring",
-              "type": "string",
-              "enum": [ "pending", "fetching", "processing",  "done", "failed" ]
-            },
-            "address": {
-              "description": "URI/URL/IRI of the source",
-              "type": "string",
-              "format": "uri"
-            }
-          }
+  "oneOf": [
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the repository",
+          "type": "string"
         },
-        { "type": "null" }
-      ]
+        "path": {
+          "description": "The name of the directory that represents the repository",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the repository",
+          "type": "string"
+        },
+        "remote_origin": {
+          "description": "True if the repository was created from a remote origin.",
+          "type": "boolean"
+        },
+        "source": {
+          "oneOf": [
+            {
+              "description": "Source of the repository, only present if remote_origin is true",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "description": "Currently either mirror or fork",
+                  "type": "string",
+                  "enum": [ "mirror", "fork" ]
+                },
+                "source_type": {
+                  "description": "The type of the source. Currently either git or svn",
+                  "type": "string",
+                  "enum": [ "git", "svn" ]
+                },
+                "state": {
+                  "description": "State of the mirroring",
+                  "type": "string",
+                  "enum": [ "pending", "fetching", "processing",  "done", "failed" ]
+                },
+                "address": {
+                  "description": "URI/URL/IRI of the source",
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            },
+            { "type": "null" }
+          ]
+        }
+      }
     },
-    "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
-  }
+    {
+      "properties": {
+        "iri": { "$ref": "generic/definitions.json#/definitions/iri" },
+        "name": {
+          "description": "The name of the repository",
+          "type": "string"
+        },
+        "path": {
+          "description": "The name of the directory that represents the repository",
+          "type": "string"
+        },
+        "description": {
+          "description": "A description of the repository",
+          "type": "string"
+        },
+        "remote_origin": {
+          "description": "True if the repository was created from a remote origin.",
+          "type": "boolean"
+        },
+        "source": {
+          "oneOf": [
+            {
+              "description": "Source of the repository, only present if remote_origin is true",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "description": "Currently either mirror or fork",
+                  "type": "string",
+                  "enum": [ "mirror", "fork" ]
+                },
+                "source_type": {
+                  "description": "The type of the source. Currently either git or svn",
+                  "type": "string",
+                  "enum": [ "git", "svn" ]
+                },
+                "state": {
+                  "description": "State of the mirroring",
+                  "type": "string",
+                  "enum": [ "pending", "fetching", "processing",  "done", "failed" ]
+                },
+                "address": {
+                  "description": "URI/URL/IRI of the source",
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            },
+            { "type": "null" }
+          ]
+        },
+        "_links": { "$ref": "generic/definitions.json#/definitions/_links" }
+      }
+    }
+  ]
 }
